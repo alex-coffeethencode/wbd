@@ -10,13 +10,20 @@
 
 
 import Navigation.prod.Angle as Angle
-
+import Navigation.prod.Fix as Fix
 
 #from Navigation.prod.Angle import Angle
 #from lib2to3.pgen2.tokenize import String
-
 def main():
-    MyTester()
+    myFix = Fix.Fix("myLogFile.txt")
+    myFix.setSightingFile("f.xml")
+
+    print("Start")
+    approxPos = myFix.getSightings()
+    print("End")
+
+
+main()
 
 
 def MyTester():
@@ -482,5 +489,5 @@ def customerTrialRun():
 
 
 ## Standalone run:
-main()
+#main()
 

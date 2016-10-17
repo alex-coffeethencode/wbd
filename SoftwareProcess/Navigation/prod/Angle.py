@@ -4,7 +4,7 @@
         According to project specifications.
 
     Baselined: Sept 4th, 2016 
-    Modified: Sept 11th 2016
+    Modified: Oct 16th 2016
     @author:    Alex Schultz
  
 '''
@@ -34,63 +34,61 @@ class Angle():
             
             self.degrees = degrees
             self.minutes = dif * 60
-                                 
-        except ValueError:
+            
+            return self.getDegrees()
+        except:
             raise ValueError("Angle.setDegrees:  ValueError")
-        except TypeError:
-            raise TypeError("Angle.setDegrees:  TypeError")   
 
              
     def setDegreesAndMinutes(self, angleString):
-        try:    
-            delimiter = 0
-            delimiter = angleString.index('d')
-            if delimiter >= 1:
-                
-                degrees, minutes = angleString.split('d')            
-                degrees = float(degrees)
-                minutes = float(minutes)    
-            
-                while degrees < 0:
-                    degrees += 360
-                degrees = (degrees) % 360            
-            
-                degInt = int(degrees)
-                dif = degrees - degInt
-                if dif != 0:
-                    raise ValueError("Angle.setDegreesAndMinutes:  ValueError Degree must be an integer")
-                
-                #degrees = degInt
-                #minutes += dif * 60
-                
-                minIn = int(minutes * 10)/10
-  
-                if minIn != minutes:
-                    raise ValueError("Angle.setDegreesAndMinutes:  ValueError Minutes must be accurate to 1 decimal ")
-                    
-                
-                if minutes < 0:
-                    raise ValueError("Angle.setDegreesAndMinutes:  ValueError Minutes must be greater than 0")              
-                elif minutes > 60:
+        #try:    
+          delimiter = 0
+          delimiter = angleString.index('d')
+          if delimiter >= 1:
+              
+              degrees, minutes = angleString.split('d')            
+              degrees = float(degrees)
+              minutes = float(minutes)    
+          
+              while degrees < 0:
+                  degrees += 360
+              degrees = (degrees) % 360            
+          
+              degInt = int(degrees)
+              dif = degrees - degInt
+              if dif != 0:
+                  raise ValueError("Angle.setDegreesAndMinutes:  ValueError Degree must be an integer")
+              
+              #degrees = degInt
+              #minutes += dif * 60
+              
+              minIn = minutes #int(minutes * 10)/10
+             
 
-                
-                    
-                    stub = minutes % 60
-                    degrees += (minutes - stub) / 60
-                    minutes = stub
-                    
-                self.minutes = minutes
-                self.degrees = degrees
-                
-                return self.getDegrees()
-            else:
+              #if minIn != minutes:
+             #     raise ValueError("Angle.setDegreesAndMinutes:  ValueError Minutes must be accurate to 1 decimal ")
+                  
+              
+              if minutes < 0:
+                  raise ValueError("Angle.setDegreesAndMinutes:  ValueError Minutes must be greater than 0")              
+              elif minutes > 60:
+
+              
+                  
+                  stub = minutes % 60
+                  degrees += (minutes - stub) / 60
+                  minutes = stub
+                  
+              self.minutes = minutes
+              self.degrees = degrees
+              
+              return self.getDegrees()
+          else:
                 raise ValueError("Angle.setDegreesAndMinutes:  ValueError Must include Degrees")
                 
-        except ValueError:
-            raise ValueError("Angle.setDegreesAndMinutes:  ValueError")
-        except TypeError:
-            raise TypeError("Angle.setDegreesAndMinutes:  TypeError")
-
+        #except:
+        #    raise ValueError("Angle.setDegreesAndMinutes:  ValueError")
+        
     
     def add(self, angle):
         try:
@@ -118,13 +116,9 @@ class Angle():
             
             return self.getDegrees()
         
-        except ValueError:
+        except:
             raise ValueError("Angle.add:  ValueError  " + str(angle.degrees) + " " + str(angle.minutes))
-        except TypeError:
-            raise TypeError("Angle.add:  TypeError")
-        except AttributeError:
-             raise ValueError("Angle.add:  AttributeError")
-
+        
 
     def subtract(self, angle):
         try:
@@ -158,13 +152,9 @@ class Angle():
         
             return self.getDegrees()
         
-        except ValueError:
+        except:
             raise ValueError("Angle.subtract:  ValueError")
-        except TypeError:
-            raise TypeError("Angle.subtract:  TypeError")            
-        except AttributeError:
-             raise ValueError("Angle.subtract:  AttributeError")
-    
+        
     
     def compare(self, angle):
         try:
@@ -172,23 +162,22 @@ class Angle():
                 raise ValueError("Angle.subtract:  ValueError on input " + str(angle.degrees) + " " + str(angle.minutes))
             
             if angle.getDegrees() < self.getDegrees():
-                return -1
-            elif angle.getDegrees() > self.getDegrees():
                 return 1
+            elif angle.getDegrees() > self.getDegrees():
+                return -1
             else:
                 return 0
                                  
-        except ValueError:
+        except:
             raise ValueError("Angle.compare:  ValueError")
-        except TypeError:
-            raise TypeError("Angle.compare:  TypeError")   
-        except AttributeError:
-             raise ValueError("Angle.compare:  AttributeError")
             
             
     def getString(self):
-        return str(int(self.degrees)) + "d" + format(round(self.minutes, 1))
+        return str(int(self.degrees)) + "d" + str(round(self.minutes,1))
     
     
     def getDegrees(self):
-        return round(self.degrees + (self.minutes) / 60, 1)
+        return self.degrees + (self.minutes) / 60.0
+        #return round(self.degrees + (self.minutes) / 60, 1)
+    
+    
