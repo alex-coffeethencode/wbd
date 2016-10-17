@@ -1,0 +1,2 @@
+LOG:	2016-10-16 22:53:06.340000:	Start of log
+LOG:	2016-10-16 22:53:06.362000:	Start of sighting file: f.xml
