@@ -1,6 +1,175 @@
-LOG:	2016-10-16 22:53:06.146000:	Start of log
-LOG:	2016-10-16 22:53:06.159000:	Start of sighting file: f.xml
-LOG:	2016-10-16 22:53:06.177000:	Aldebaran	2016-03-01	23:40:01	15d6.0
-LOG:	2016-10-16 22:53:06.177000:	Peacock	2016-03-02	00:05:05	45d12.6
-LOG:	2016-10-16 22:53:06.177000:	End of sighting file: f.xml
-LOG:	2016-10-16 22:53:06.279000:	Start of log
+LOG:	2016-10-30 23:27:01.271000:	Start of log
+Start of sighting file
+LOG:	2016-10-30 23:27:01.302000:	Start of sighting file: f.xml
+LOG:	2016-10-30 23:35:07.557000:	Start of log
+Start of sighting file
+LOG:	2016-10-30 23:43:19.413000:	Start of log
+Start of sighting file
+LOG:	2016-10-30 23:47:20.144000:	Start of log
+Start of sighting file
+LOG:	2016-10-30 23:52:57.261000:	Start of log
+Start of sighting file
+LOG:	2016-10-30 23:53:40.314000:	Start of log
+Start of sighting file
+LOG:	2016-10-30 23:55:33.708000:	Start of log
+Start of sighting file
+LOG:	2016-10-30 23:56:05.164000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 00:44:01.441000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 00:44:34.579000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 00:45:11.643000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 00:47:59.385000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 00:52:43.853000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 00:53:07.529000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 00:54:17.506000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 00:54:58.609000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 01:01:58.474000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:40:38.220000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:43:03.770000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:43:58.691000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:44:24.766000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:45:02.016000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:45:31.495000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:46:25.645000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:46:54.838000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:48:02.120000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:55:09.941000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:59:09.197000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 12:59:12.129000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:04:32.964000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:09:01.774000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:09:03.069000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:23:09.736000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:24:37.007000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:28:41.503000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:29:37.014000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:31:09.318000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:31:56.280000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:46:36.507000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:46:37.220000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:47:18.253000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 13:47:53.494000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:25:29.543000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:26:02.758000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:26:38.376000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:28:10.611000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:29:12.379000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:29:45.502000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:30:35.592000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:31:06.217000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:32:17.546000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:32:53.973000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:33:23.348000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:37:32.589000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:40:06.451000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:41:01.111000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:43:20.437000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:45:53.420000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:46:59.463000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 16:59:25.392000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 17:31:43.840000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 17:32:21.067000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 17:34:20.496000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 17:35:19.315000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 17:41:13.502000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 17:43:53.575000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 17:46:50.471000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 17:50:11.955000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 17:51:10.074000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 19:31:38.918000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 19:33:07.588000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 19:33:52.780000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 19:37:16.416000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 19:38:13.463000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 19:39:23.282000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 19:43:39.530000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 20:11:35.823000:	Start of log
+Start of sighting file: f.xmlLOG:	2016-10-31 20:11:52.209000:	Start of log
+Start of sighting file: f.xmlLOG:	2016-10-31 20:13:12.842000:	Start of log
+Start of sighting file   f.xmlLOG:	2016-10-31 20:13:17.505000:	Start of log
+Start of sighting file   f.xmlLOG:	2016-10-31 20:15:58.837000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 20:16:03.436000:	Start of log
+Start of sighting file
+LOG:	2016-10-31 20:21:45.125000:	Start of log
+Start of sighting file
+f.xmlLOG:	2016-10-31 21:02:10.592000:	Start of log
+Sighting file: f.xmlLOG:	2016-10-31 21:03:57.964000:	Start of log
+Sighting file: f.xmlLOG:	2016-10-31 21:04:30.693000:	Start of log
+Sighting file: f.xmlLOG:	2016-10-31 21:05:57.908000:	Start of log
+Sighting file: f.xmlLOG:	2016-10-31 21:08:11.157000:	Start of log
+Sighting file: f.xmlLOG:	2016-10-31 21:08:49.200000:	Start of log
+Sighting file: f.xmlLOG:	2016-10-31 21:12:11.367000:	Start of log
+Sighting file: C:\Users\Alex\git\SoftwareProcess\SoftwareProcess\Navigation\test;f.xml
+LOG:	2016-10-31 21:12:31.039000:	Start of log
+Sighting file: C:\Users\Alex\git\SoftwareProcess\SoftwareProcess\Navigation\test\f.xml
+LOG:	2016-10-31 21:37:15.142000:	Log file:C:\Users\Alex\git\SoftwareProcess\SoftwareProcess\Navigation\test\myLogFile.txt
+Sighting file: C:\Users\Alex\git\SoftwareProcess\SoftwareProcess\Navigation\test\f.xml
