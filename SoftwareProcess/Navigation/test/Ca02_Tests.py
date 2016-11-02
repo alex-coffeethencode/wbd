@@ -20,6 +20,31 @@ class Ca02_Test(unittest.TestCase):
 
 #m1 =  Fix() (The constructor)
     #Assert Valid contructor
+    
+        
+    def test000_000_CheckAgaisntSampleProvided(self):
+        file = "myLogFile.txt"
+        
+        os.remove(os.getcwd() + os.path.sep + file)
+
+        a = open(file, "w+")
+        a.close()
+    
+        
+        myFix = Fix.Fix(file)
+        myFix.setSightingFile("f.xml")
+        a = myFix.getSightings()
+        
+        #myLog = open("myLogFile.txt")
+        print a        
+        
+        # Line by line assertions:
+        
+    
+    
+     
+    
+    '''
     def test100_010_ShouldConstruct(self):
         self.assertIsInstance(Fix.Fix(), Fix.Fix)
 
@@ -143,41 +168,6 @@ class Ca02_Test(unittest.TestCase):
             myFix.getSightings()
         self.assertEquals(expectedString, context.exception.args[0][0:len(expectedString)])
     
-    def test000_000_CheckAgaisntSampleProvided(self):
-        file = "myLogFile.txt"
-        
-        os.remove(os.getcwd() + os.path.sep + file)
-
-        a = open(file, "w+")
-        a.close()
-        
-        lineOne = "LOG:\t2016-10-01 10:01:09-06:00\tStart of log\n"
-        lineTwo = "LOG:\t2016-10-01 10:01:10-06:00\tStart of sighting file:  f.xml"
-        lineThr = "LOG:\t2016-10-01 10:01:10-06:00\tAldebaran   2016-03-01   23:30:01   15d01.5"
-        lineFor = "LOG:\t2016-10-01 10:01:10-06:00\tPeacock   2016-03-02   00:05:05   45d11.9"
-        lineFiv = "LOG:\t2016-10-01 10:01:10-06:00\tEnd of sighting file:  f.xml"
-
-        
-        myFix = Fix.Fix(file)
-        myFix.setSightingFile("f.xml")
-        a = myFix.getSightings()
-        
-        myLog = open("myLogFile.txt")
-        lineArray = myLog.readlines()
-        
-        #self.assertEquals(lineArray[0], lineOne)
-        #self.assertEquals(lineArray[1][0:-1], lineTwo)
-        #self.assertEquals(lineArray[2][0:-1], lineThr)
-        #self.assertEquals(lineArray[3][0:-1], lineFor)
-        self.assertEquals(lineArray[4][0:-1], lineFiv)
-        
-        
-        # Line by line assertions:
-        
-    
-    
-    
-    
     
     # 050 test internal tag stuff
 #    def test300_051_F6_LeadingWhiteSpaceCut(self):
@@ -250,3 +240,6 @@ class Ca02_Test(unittest.TestCase):
         #self.assertEquals(lineArray[2][0:-1], lineThr)
         #self.assertEquals(lineArray[3][0:-1], lineFor)
         self.assertEquals(lineArray[4][0:-1], lineFiv)
+
+'''
+   

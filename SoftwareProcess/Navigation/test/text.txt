@@ -118,3 +118,21 @@ LOG:	2016-10-16 22:53:06.299000:	Start of log
 LOG:	2016-10-16 22:53:06.321000:	Start of log
 LOG:	2016-10-16 22:53:06.377000:	Start of log
 LOG:	2016-10-16 22:53:06.398000:	Start of log
+LOG:	2016-10-26 14:44:26.135000:	Start of log
+LOG:	2016-10-26 14:44:26.150000:	Start of log
+LOG:	2016-10-26 14:44:26.151000:	Start of log
+LOG:	2016-10-26 14:44:26.170000:	Start of log
+LOG:	2016-10-26 14:44:26.187000:	Start of log
+LOG:	2016-10-26 14:44:26.213000:	Start of log
+LOG:	2016-10-26 14:44:26.244000:	Start of log
+LOG:	2016-10-26 14:44:26.278000:	Start of log
+LOG:	2016-10-26 14:44:53.558000:	Start of log
+LOG:	2016-10-26 14:44:53.675000:	Start of log
+LOG:	2016-10-26 14:44:53.739000:	Start of log
+LOG:	2016-10-26 14:44:53.761000:	Start of log
+LOG:	2016-10-30 22:07:02.267000:	Start of log
+LOG:	2016-10-30 22:07:02.285000:	Start of log
+LOG:	2016-10-30 22:07:02.393000:	Start of log
+Start of sighting file
+LOG:	2016-10-30 22:07:02.466000:	Start of log
+Start of sighting file
