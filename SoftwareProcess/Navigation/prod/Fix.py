@@ -163,7 +163,7 @@ class Fix():
         # NOte if myLogArray really is a value error better to write to log file first before error occurs
         if type(myLogArray) == ValueError:
             raise myLogArray 
-          
+
         elif myLogArray == False:
             pass
             #raise ValueError("Fix.setSightingFile:  myLogArray is returning False")  
@@ -403,7 +403,7 @@ class Fix():
                 if check == False:
                     date = self.convertDateFormat(date, True)
                 else:
-                    date = check
+                    date = False#check
                 #print date
                 
                 if date == False:
