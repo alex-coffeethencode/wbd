@@ -13,19 +13,19 @@ import math
 from lib2to3.fixer_util import String, Dot
 
 class Angle():
-    degrees = 0
-    minutes = 0
+    degrees = 0.0
+    minutes = 0.0
     
     def __init__(self):
-        self.minutes = 0
-        self.degrees = 0
+        self.minutes = 0.0
+        self.degrees = 0.0
 
 
     def setDegrees(self, degrees=0):
         try:
-
+            
             while degrees < 0:
-                degrees += 360
+                degrees = degrees + 360.0
             degrees = (degrees) % 360            
             
             degInt = int(degrees)
@@ -33,7 +33,8 @@ class Angle():
             degrees = degInt
             
             self.degrees = degrees
-            self.minutes = dif * 60
+            self.minutes = dif * 60.0
+            
             
             return self.getDegrees()
         except:
@@ -64,7 +65,7 @@ class Angle():
                 raise ValueError("Angle.setDegreesAndMinutes:  No more than 1 decimal place")
                 
             try:
-                degrees = float(degrees)
+                degrees = int(degrees)
                 minutes = float(minutes)    
             except:
                 raise ValueError("Angle.setDegreesAndMinutes:  Minf/Deg must be convertable to float")
@@ -98,10 +99,12 @@ class Angle():
        
     
     def add(self, angle = "Not Set"):
+        if angle == "Not Set":
+            raise ValueError("Angle.add:  No Input")
+        if not isinstance(angle, Angle):
+                raise ValueError("Angle.add:  ValueError on type of input " )
         try:
-            if type(angle) != type(Angle()):
-                raise ValueError("Angle.add:  ValueError on input " )#+ str(angle.degrees) + " " + str(angle.minutes))
-                        
+                     
             degIn = angle.degrees
             minIn = angle.minutes
             
@@ -127,9 +130,11 @@ class Angle():
         
 
     def subtract(self, angle = "Not Set"):
+        if angle == "Not Set":
+            raise ValueError("Angle.subtract:  No Input")
+        if not isinstance(angle, Angle):
+            raise ValueError("Angle.subtract:  ValueError on type of input " )
         try:
-            if type(angle) != type(Angle()):
-                raise ValueError("Angle.subtract:  ValueError on input " + str(angle.degrees) + " " + str(angle.minutes))
               
             degIn = angle.degrees
             minIn = angle.minutes
@@ -150,7 +155,7 @@ class Angle():
                 while degrees < 0:
                     degrees += 360 
                 
-            degrees %= 360         
+            degrees %= 360
                  
                 
             self.minutes = minutes
@@ -163,10 +168,11 @@ class Angle():
         
     
     def compare(self, angle = "Not Set"):
+        if angle == "Not Set":
+            raise ValueError("Angle.compare:  No Input")
+        if not isinstance(angle, Angle):
+                raise ValueError("Angle.compare:  ValueError on input " + str(angle.degrees) + " " + str(angle.minutes))
         try:
-            if type(angle) != type(Angle()):
-                raise ValueError("Angle.subtract:  ValueError on input " + str(angle.degrees) + " " + str(angle.minutes))
-            
             if angle.getDegrees() < self.getDegrees():
                 return 1
             elif angle.getDegrees() > self.getDegrees():
@@ -186,5 +192,9 @@ class Angle():
         return str(int(self.degrees)) + "d" + str(round(self.minutes,1))# / 60.0)
     
     def getDegrees(self):
-        return float((self.degrees) +  round(self.minutes,1) / 60.0)
-    
+        retVal = float((self.degrees))
+        retVal = retVal + self.minutes / 60.0
+        return retVal
+ 
+        #return float((self.degrees) +  round(self.minutes,9) / 60.0)
+ 
