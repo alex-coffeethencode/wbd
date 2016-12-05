@@ -24,7 +24,7 @@ class MyAngleTest(unittest.TestCase):
         expectedString = "Angle.setDegrees:"
         myAngle = Angle.Angle()
         #Should be value errror:
-        with self.assertRaises(TypeError) as context:   
+        with self.assertRaises(ValueError) as context:   
             myAngle.setDegrees("asdf")
         self.assertEquals(expectedString, context.exception.args[0][0:len(expectedString)])
         
@@ -79,12 +79,12 @@ class MyAngleTest(unittest.TestCase):
     def test200_090_comp_wrongresultreturned(self):
         myAngle = Angle.Angle()
         otherAngle = Angle.Angle()
-        myAngle.setDegreesAndMinutes("20d0.0")
-        otherAngle.setDegreesAndMinutes("10d0.0")
+        myAngle.setDegreesAndMinutes("10d0.0")
+        otherAngle.setDegreesAndMinutes("20d0.0")
         self.assertEquals(myAngle.compare(otherAngle), -1)
-        myAngle.add(myAngle)
+        myAngle.add(otherAngle)
         self.assertEquals(myAngle.compare(otherAngle), 0)
-        myAngle.add(myAngle)
+        myAngle.add(otherAngle)
         self.assertEquals(myAngle.compare(otherAngle), 1)
         
     
